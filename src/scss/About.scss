@@ -1,0 +1,234 @@
+.about {
+    background-color: #1F1F1F;
+
+    .abt-container {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+
+        .abt-slides {
+            width: 100%;
+            height: 100vh;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+
+            .sm-con {
+                max-width: 900px;
+                height: 100%;
+                margin-left: 400px;
+                padding: 70px 30px;
+
+                @media (max-width:1000px) {
+                    margin: auto !important;
+                }
+            }
+
+        }
+
+        .abt {
+            &-1 {
+                .status {
+                    background-color: #1F1F1F;
+                    border: 1.5px solid #575757;
+                    width: fit-content;
+                    padding: 10px 30px;
+                    border-radius: 25px;
+                    height: fit-content;
+                }
+
+                .pj-btn {
+                    font-size: 44px;
+                    align-self: flex-end;
+                    transition: all 0.5s;
+
+                    i {
+                        display: inline-block;
+                        width: 4px;
+                        height: 24px;
+                        padding: 35px;
+                        font-size: 30px;
+                        border: 2px dotted gray;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #28E98C;
+
+                        @media (min-width:0px) and (max-width:500px) {
+                            font-size: 24px !important;
+                            padding: 20px !important;
+                        }
+                    }
+                }
+            }
+
+            &-2 {
+                background-color: #1F1F1F;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 40%;
+                    border: 2px solid gray;
+                    transition: all 0.5s;
+                    padding: 10px;
+
+                    @media (min-width:400px) and (max-width:1000px) {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    @media (max-width:400px) {
+                        width: 70px;
+                        height: 70px;
+
+                    }
+                }
+
+                img:hover {
+                    scale: 1.2;
+                }
+
+                // .img-txt {
+                //     @media (max-width:400px) {
+                //         display: none;
+                //     }
+                // }
+
+                .large-device {
+                    @media (min-width:0px) and (max-width:430px) {
+                        display: none;
+                    }
+                }
+
+                .small-device {
+                    @media (min-width:430px) {
+                        display: none;
+                    }
+
+                    @media (min-width:0px) and (max-width:430px) {
+                        display: block;
+                    }
+                }
+
+                .tabs-pills {
+                    .nav-link {
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #fff;
+                        border: none;
+                        transition: all 0.2s;
+                        border: 1.5px solid gray;
+                        border-radius: 25px;
+                    }
+
+                    .nav-link.active {
+                        background-color: #28E98C;
+                        color: #1F1F1F;
+                        border: 2px solid #28E98C;
+                        border-radius: 25px;
+                    }
+
+                    .nav-link:hover {
+                        border: 2px solid #28E98C;
+                        border-radius: 25px;
+                        background-color: #28E98C;
+                        color: #1F1F1F;
+                    }
+
+                    .nav-tabs {
+                        border: 0px solid gray;
+                        border-radius: 25px;
+                    }
+
+                    .accordion-button {
+                        background-color: #1F1F1F;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        border-bottom: 2px solid gray !important;
+                    }
+
+                    .accordion-button:focus {
+                        box-shadow: none;
+                        border-color: rgba(0, 0, 0, .125);
+                    }
+
+                    .accordion-button,
+                    .accordion-flush,
+                    .accordion-item {
+                        border-radius: 25px;
+                        border: 0px;
+                        box-shadow: none !important;
+                        margin-top: 10px;
+
+                    }
+
+                    .accordion-button {
+                        padding-top: 30px;
+                    }
+                }
+
+                .sm-con {
+                    position: relative;
+
+                    .pj-btn {
+                        font-size: 44px;
+                        align-self: flex-end;
+                        transition: all 0.5s;
+                        position: absolute;
+                        right: 30px;
+                        bottom: 80px;
+
+                        i {
+                            transform: rotate(180deg);
+                            display: inline-block;
+                            width: 4px;
+                            height: 24px;
+                            padding: 35px;
+                            font-size: 30px;
+                            border: 2px dotted gray;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #28E98C;
+
+                            @media (min-width:0px) and (max-width:500px) {
+                                font-size: 24px !important;
+                                padding: 20px !important;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            &-3 {
+                background-color: #1F1F1F;
+            }
+        }
+    }
+
+    .clr {
+        color: #28E98C;
+    }
+
+    .sm-text {
+        font-size: 20px;
+        line-height: 40px;
+
+        @media (min-width:600px) and (max-width:720px) {
+            font-size: 18px !important;
+            line-height: 30px;
+        }
+
+        @media (max-width:600px) {
+            font-size: 14px !important;
+            line-height: 25px;
+        }
+
+    }
+}

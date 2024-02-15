@@ -1,0 +1,17 @@
+.nopage {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .npl:hover {
+        color: black;
+    }
+
+}
+
+.clr {
+    color: #28E98C;
+}
