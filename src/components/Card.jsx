@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Card() {
   return (
     <>
-      <div className="card">
+      <div className="card ">
         <div className='card-con'>
           <div className='text-light text-center '>
             <h4 className='fw-bold '>Prayag Adhikari</h4>

@@ -82,13 +82,15 @@ nav {
                 color: gray;
                 font-size: 20px;
                 font-weight: 400;
+                position: relative;
+                display: inline-block;
             }
 
             a.active {
                 color: #28E98C;
             }
 
-            a:hover{
+            a:hover {
                 color: #28E98C;
             }
         }

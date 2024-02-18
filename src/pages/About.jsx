@@ -29,7 +29,7 @@ function About() {
                   About Me
                 </div>
                 <div className="col-lg-12 text-light sm-text">
-                  A recent high school graduate, with a passion for software development. Alongside the above-average academic background, I have actively participated in various extracurricular activities in the fields related to science, sports, and art. My time has also been dedicated to acquiring training in front-end website development. All the past experience has heightened my interest in the field of Computer Science.
+                  <span className='extra-text'>A recent high school graduate, with a passion for software development. Alongside the above-average academic background,</span> I have actively participated in various extracurricular activities in the fields related to science, sports, and art. My time has also been dedicated to acquiring training in front-end website development. All the past experience has heightened my interest in the field of Computer Science.
                 </div>
                 <div className="col-lg-12 d-flex justify-content-end">
                   <div className="pj-btn text-end animate__animated animate__fadeInDown animate__slower animate__infinite"><i className="ri-arrow-down-line"></i></div>

@@ -1,0 +1,77 @@
+.portfolio {
+
+    .container {
+        padding: 50px 30px;
+        margin: auto;
+
+        .status {
+            background-color: #1F1F1F;
+            border: 1.5px solid #575757;
+            width: fit-content;
+            padding: 10px 30px;
+            border-radius: 25px;
+            height: fit-content;
+        }
+
+        .p-card {
+            iframe {
+                width: 500px;
+            }
+        }
+
+        .owl-carousel {
+            padding: 30px 0px;
+            img {
+                width: 50% !important;
+                border-radius: 50px !important;
+                border: 2px dotted #575757;
+                padding: 20px;
+                opacity: 0.8;
+
+                @media (min-width:0px) and (max-width:950px) {
+                    width: 75% !important;
+                }
+            }
+        }
+
+        .img-box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 34px;
+                color: #28E98C;
+                transition: all 0.3s;
+            }
+
+            a:hover {
+                color: #575757;
+            }
+
+
+            .tools-con {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .tools {
+                    padding: 5px 10px;
+                    background-color: #57575771;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        
+
+        .clr {
+            color: #28E98C !important;
+        }
+    }
+
+
+}

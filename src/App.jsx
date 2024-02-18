@@ -5,6 +5,8 @@ import About from './pages/About'
 import Nopage from './pages/Nopage'
 import Services from './pages/Services'
 import Html from './pages/Html'
+import Contact from './pages/Contact'
+import Portfolio from './pages/Portfolio'
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/' element={<Contact/>}/>
         <Route path='/html/projects' element={<Html/>}/>
         <Route path='*' element={<Nopage/>}/>
     </Routes>
