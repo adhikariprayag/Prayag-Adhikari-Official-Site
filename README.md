@@ -1,4 +1,4 @@
-<h1>The following site can be viewed at https://prayagadhikari.netlify.app/</h1>
-<p>It will soon be deployed at <a href="https://prayagadhikari.com.np" target="_blank">prayagadhikari.com.np </a>(currently this site has not been updated) </p>
+<h1>The following site can be viewed at [https://prayagadhikari.netlify.app/</](https://prayagadhikari.com.np) </h1>
+<p>If any error occurs go to: <a href="https://prayagadhikari.netlify.app" target="_blank">prayagadhikari.netlify.app</a></p>
 
  #react + vite
