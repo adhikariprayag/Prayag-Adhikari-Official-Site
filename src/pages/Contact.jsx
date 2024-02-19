@@ -18,7 +18,7 @@ function Contact() {
                             Let's Talk
                         </div>
                         <div className="col-lg-12 py-4">
-                            <form name="contact" netlify>
+                            <form name="contact" action='post' data-netlify='true' id='Contact-Form' netlify>
                                 <p>
                                     <input type="text" name="name" placeholder='Name*' required/>
                                 </p>
@@ -33,6 +33,9 @@ function Contact() {
                                 
                                 <p>
                                     <textarea type="text" name="message" placeholder='Your Message*' required/>
+                                </p>
+                                <p>
+                                    <div data-netlify-recaptcha='true'></div>
                                 </p>
 
                                 <p>
