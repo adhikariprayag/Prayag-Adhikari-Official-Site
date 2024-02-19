@@ -51,6 +51,16 @@
                 outline: none;
             }
 
+            .bg-salmon{
+                background-color: #575757 !important;
+                border: #575757;
+                transition: all 0.3s;
+            }
+
+            .bg-salmon:hover{
+                color: #1F1F1F;
+            }
+
             button {
                 padding: 7px 30px;
                 background-color: #28E98C;
@@ -64,11 +74,14 @@
                 transition: all 0.3s;
                 font-weight: 600;
             }
-    
+
+            
             button:hover {
                 background-color: transparent;
                 color: white;
             }
+
+            
         }
     }
 

@@ -11,7 +11,7 @@ function Contact() {
     const [verified, setVerified] = useState(false)
     const sendEmail = (e) => {
         e.preventDefault();
-        
+
         emailjs
             .sendForm('service_v0qc69z', 'template_nps635a', form.current, {
                 publicKey: 'xcdBj7bj7kVYRUx4_',
@@ -28,11 +28,15 @@ function Contact() {
         grecaptcha.reset();
     };
 
+    const handleClick = event => {
+        
+        setVerified(current => !current);
+      };
+
     // CAPTCHA FUNCTION
-    function onChange(value){
+    function onChange(value) {
         console.log("Captcha value:", value);
         setVerified(true);
-        
     }
     return (
         <>
@@ -77,7 +81,7 @@ function Contact() {
 
 
                                 <p>
-                                    <button type="submit" disabled={!verified}>Send</button>
+                                    <button className={!verified ? 'bg-salmon' : ''} onClick={handleClick} type="submit" disabled={!verified}>Send</button>
                                 </p>
                             </form>
                         </div>
