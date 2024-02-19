@@ -18,7 +18,7 @@ function Contact() {
                             Let's Talk
                         </div>
                         <div className="col-lg-12 py-4">
-                            <form name="contact" action='post' data-netlify='true' id='Contact-Form' netlify>
+                            <form name="contact" action='post' onSubmit="submit" data-netlify='true' id='Contact-Form' netlify>
                                 <p>
                                     <input type="text" name="name" placeholder='Name*' required/>
                                 </p>
