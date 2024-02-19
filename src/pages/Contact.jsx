@@ -1,14 +1,44 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
 import '../scss/Contact.scss'
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
+
+    const form = useRef()
+    const [verified, setVerified] = useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+        
+        emailjs
+            .sendForm('service_v0qc69z', 'template_nps635a', form.current, {
+                publicKey: 'xcdBj7bj7kVYRUx4_',
+            })
+            .then(
+                () => {
+                    alert('Message Sent Successfully!');
+                },
+                (error) => {
+                    alert('Message Not Sent!');
+                },
+            );
+        e.target.reset()
+        grecaptcha.reset();
+    };
+
+    // CAPTCHA FUNCTION
+    function onChange(value){
+        console.log("Captcha value:", value);
+        setVerified(true);
+        
+    }
     return (
         <>
             <Card />
             <Navbar />
-            <div className="contact animate__animated animate__slideInUp">
+            <div className="contact animate__animated animate__fadeIn">
                 <div className="container-contact">
                     <div className="row">
                         <div className="col-lg-12">
@@ -17,29 +47,37 @@ function Contact() {
                         <div className="col-lg-12 title">
                             Let's Talk
                         </div>
-                        <div className="col-lg-12 py-4">
-                            <form name="contact"  id='Contact-Form' netlify netlify-honeypot="bot-field" action='/contact' method='post'>
+                        <div className="col-lg-12 py-3">
+                            <form ref={form} onSubmit={sendEmail}>
                                 <p>
-                                    <input type="text" name="name" placeholder='Name*' required/>
-                                </p>
-                                
-                                <p>
-                                    <input type="email" name="email" placeholder='Email*' required/>
+                                    <input type="text" name="name" placeholder='Name*' required />
                                 </p>
 
                                 <p>
-                                    <input type="text" name="subject" placeholder='Your Subject*' required/>
+                                    <input type="email" name="email" placeholder='Email*' required />
                                 </p>
-                                
+
                                 <p>
-                                    <textarea type="text" name="message" placeholder='Your Message*' required/>
+                                    <input type="text" name="subject" placeholder='Your Subject*' required />
+                                </p>
+
+                                <p>
+                                    <textarea type="text" name="message" placeholder='Your Message*' required />
                                 </p>
                                 <p>
                                     <div data-netlify-recaptcha='true'></div>
                                 </p>
 
                                 <p>
-                                    <button type="submit">Send</button>
+                                    <ReCAPTCHA
+                                        sitekey="6LcdQXgpAAAAABbmJffptZFjldoKN-3xhlBsNmoY"
+                                        onChange={onChange}
+                                    />
+                                </p>
+
+
+                                <p>
+                                    <button type="submit" disabled={!verified}>Send</button>
                                 </p>
                             </form>
                         </div>
