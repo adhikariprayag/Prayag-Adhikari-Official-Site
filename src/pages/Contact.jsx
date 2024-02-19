@@ -28,11 +28,6 @@ function Contact() {
         grecaptcha.reset();
     };
 
-    const handleClick = event => {
-        
-        setVerified(current => !current);
-      };
-
     // CAPTCHA FUNCTION
     function onChange(value) {
         console.log("Captcha value:", value);
@@ -81,13 +76,11 @@ function Contact() {
 
 
                                 <p>
-                                    <button className={!verified ? 'bg-salmon' : ''} onClick={handleClick} type="submit" disabled={!verified}>Send</button>
+                                    <button type="submit" disabled={!verified}>Send</button>
                                 </p>
                             </form>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
