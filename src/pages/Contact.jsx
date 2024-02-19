@@ -18,7 +18,7 @@ function Contact() {
                             Let's Talk
                         </div>
                         <div className="col-lg-12 py-4">
-                            <form name="contact text-light w-100" netlify>
+                            <form name="contact" method='POST' data-netlify="true" onSubmit="submit" netlify>
                                 <p>
                                     <input type="text" name="name" placeholder='Name*' required/>
                                 </p>
