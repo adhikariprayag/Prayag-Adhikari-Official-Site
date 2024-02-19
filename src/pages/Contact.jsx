@@ -76,7 +76,7 @@ function Contact() {
 
 
                                 <p>
-                                    <button type="submit" disabled={!verified}>Send</button>
+                                    <button className="btn " type="submit" disabled={!verified}>Send</button>
                                 </p>
                             </form>
                         </div>
