@@ -22,13 +22,13 @@ function Portfolio() {
   return (
     <>
       <Navbar />
-      <section className='portfolio animate__animated animate__fadeInUp'>
+      <section className='portfolio animate__animated animate__slideInUp'>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className='text-light status'><i className="ri-tv-2-line"></i> PORTFOLIO</div>
             </div>
-            <div className="col-lg-12 py-5 text-light">
+            <div className="col-lg-12 py-4 text-light">
               <div className="owl-carousel">
                 <div className='img-box '>
                   <img className='w-50 ' src={Nepsop} alt="" />

@@ -20,8 +20,12 @@ function Card() {
                 <li><a href="https://github.com/adhikariprayag" target='_blank'><i className="ri-github-line"></i></a></li>
               </ul>
             </div>
-            <p className='py-5 fw-lighter '>© a Y<i className="ri-eye-line"></i>GA creation</p>
-            <div className='btn-out'><Link to="/contact" className='button'>Let's Talk</Link></div>
+            <div className='py-3'>
+            <a href="mailto:adhikariprayag0@gmail.com" className='text-decoration-none text-secondary'><p className='fw-normal  py-2  m-0 fs-6 '><i className="ri-mail-send-line fw-lighter "></i> adhikariprayag0@gmail.com</p></a>
+            <p className='fw-normal p-0 m-0 text-secondary '>© a Y<i className="ri-eye-line"></i>GA creation</p>
+            </div>
+            
+            <div className='btn-out py-2 '><Link to="/contact" className='button'>Let's Talk</Link></div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .portfolio {
 
     .container {
-        padding: 50px 30px;
+        padding: 50px 40px;
         margin: auto;
 
         .status {
@@ -46,6 +46,10 @@
                 font-size: 34px;
                 color: #28E98C;
                 transition: all 0.3s;
+
+                @media (min-width:0px) and (max-width:300px) {
+                    font-size: 18px;
+                }
             }
 
             a:hover {
@@ -62,6 +66,10 @@
                     padding: 5px 10px;
                     background-color: #57575771;
                     border-radius: 4px;
+
+                    @media (min-width:0px) and (max-width:300px) {
+                        font-size: 14px;
+                    }
                 }
             }
         }

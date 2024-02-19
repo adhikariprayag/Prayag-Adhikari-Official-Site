@@ -11,7 +11,7 @@ function Services() {
       <Navbar />
       <Card />
       <div className="services">
-        <div className="serv-main-con animate__animated animate__bounceInUp">
+        <div className="serv-main-con animate__animated animate__slideInUp">
 
           {/* SLIDE 1 */}
           <div className="serv-slides text-light slide-1">

@@ -1,34 +1,51 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Card from '../components/Card'
+import '../scss/Contact.scss'
 
 function Contact() {
     return (
         <>
-            <div className="container">
-                <div classname="contact text-light">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div className="mb-3">
-                            <label htmlFor="exampleFormControlInput1" className="form-label text-light">Name *</label>
-                            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ram Nepal" required/>
+            <Card />
+            <Navbar />
+            <div className="contact animate__animated animate__slideInUp">
+                <div className="container-contact">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className='text-light status'><i className="ri-chat-3-line"></i> CONTACT</div>
                         </div>
-                        <div className="mb-3">
-                            <label htmlFor="exampleFormControlInput1" className="form-label text-light">Email address</label>
-                            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required/>
+                        <div className="col-lg-12 title">
+                            Let's Talk
                         </div>
-                        <div className="mb-3">
-                            <label htmlFor="exampleFormControlInput1" className="form-label text-light">Phone</label>
-                            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="" />
-                        </div>
+                        <div className="col-lg-12 py-4">
+                            <form name="contact text-light w-100" netlify>
+                                <p>
+                                    <input type="text" name="name" placeholder='Name*' required/>
+                                </p>
+                                
+                                <p>
+                                    <input type="email" name="email" placeholder='Email*' required/>
+                                </p>
 
-                        <div className="mb-3">
-                            <label htmlFor="exampleFormControlTextarea1" className="form-label text-light">Your Concern</label>
-                            <textarea className="form-control" id="exampleFormControlTextarea1" rows={3} defaultValue={""} required/>
+                                <p>
+                                    <input type="text" name="subject" placeholder='Your Subject*' required/>
+                                </p>
+                                
+                                <p>
+                                    <textarea type="text" name="message" placeholder='Your Message*' required/>
+                                </p>
+
+                                <p>
+                                    <button type="submit">Send</button>
+                                </p>
+                            </form>
                         </div>
-                        <div>
-                        <input type="submit" value="Submit"/>
-                        </div>
-                    </form>
+                    </div>
+
+
                 </div>
             </div>
+
 
 
         </>
