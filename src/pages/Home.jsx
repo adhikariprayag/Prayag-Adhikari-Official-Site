@@ -20,9 +20,9 @@ function Home() {
                                 <img src={Pfp} alt="" />
                             </div>
                             <div className='clr py-3'><h1 className='fw-bolder p-0 m-0 '>Prayag Adhikari</h1></div>
-                            <div className='py-3 '><p className='text-light fw-light fs-5 p-0 m-0 '>A Web Designer & Developer, Graphic Designer and UI/UX Designer.</p></div>
+                            <div className='py-3 '><p className='text-light fw-light fs-5 p-0 m-0 '>A Web Designer/Developer, Graphic Designer and UI/UX Designer, based in Kathmandu, Nepal.</p></div>
                             <div>
-                                <ul className='d-flex  m-0 p-0 justify-content-evenly gap-4'>
+                                <ul className='d-flex list-unstyled  m-0 p-0 justify-content-evenly gap-4'>
                                     <li><a href="https://www.facebook.com/adhikariprayag" target='_blank'><i className="ri-facebook-line"></i></a></li>
                                     <li><a href="https://www.instagram.com/adhikariprayag/" target='_blank'><i className="ri-instagram-line"></i></a></li>
                                     <li><a href="https://www.linkedin.com/in/adhikariprayag/" target='_blank'><i className="ri-linkedin-line"></i></a></li>
