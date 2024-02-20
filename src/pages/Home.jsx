@@ -33,7 +33,8 @@ function Home() {
                                 <div className='btn-out'><Link to="/contact" className='button'>Let's Talk</Link></div>
                             </div>
                             <div>
-                                <p className='pt-4 fw-lighter text-light'>© a Y<i className="ri-eye-line"></i>GA creation</p>
+                                <p className='pt-4 fw-lighter text-secondary m-0 '>© a Y<i className="ri-eye-line"></i>GA creation</p>
+                                <a href="mailto:adhikariprayag0@gmail.com" className='text-decoration-none text-secondary'><p className='fw-normal  py-2  m-0 fs-6 '><i className="ri-mail-send-line fw-lighter "></i> adhikariprayag0@gmail.com</p></a>
                             </div>
                             <div className="col-lg-12 d-flex justify-content-end w-100 ">
                                 <div className="pj-btn py-1  text-end animate__animated animate__fadeInDown animate__slower animate__infinite"><i className="ri-arrow-down-line"></i></div>
