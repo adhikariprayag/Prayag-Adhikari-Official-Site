@@ -1,5 +1,6 @@
 # View my site at https://prayagadhikari.com.np
-# If any error occurs go to: https://prayagadhikari.netlify.app 
+
+If any error occurs go to: https://prayagadhikari.netlify.app 
 
 Technologies Used:
 <ul>
