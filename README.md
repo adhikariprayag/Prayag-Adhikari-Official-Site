@@ -1,4 +1,12 @@
-<h1>The following site can be viewed at [https://prayagadhikari.netlify.app/</](https://prayagadhikari.com.np) </h1>
-<p>If any error occurs go to: <a href="https://prayagadhikari.netlify.app" target="_blank">prayagadhikari.netlify.app</a></p>
+# View my site at https://prayagadhikari.com.np
 
- #react + vite
+If any error occurs go to: https://prayagadhikari.netlify.app 
+
+Technologies Used:
+<ul>
+ <li>React JS</li>
+ <li>Bootstrap</li>
+ <li>Scss</li>
+ <li>Animate Css</li>
+ <li>Owl Carousel</li>
+</ul>
