@@ -12,7 +12,7 @@ function Html() {
             <li>6: <a href="https://deaxaut.netlify.app/" target='_blank'>https://deaxautt.netlify.app/</a></li>
             <li>7: <a href="https://grofarweb.netlify.app/" target='_blank'>https://grofarweb.netlify.app/</a></li>
             <li>8: <a href="https://bloggardemo.netlify.app/" target='_blank'>https://bloggardemo.netlify.app/</a></li>
-            <li>9: <a href="https://oganidemo.netlify.app/" target='_blank'>https://oganidemo.netlify.app/</a></li>
+            <li>9: <a href="https://shopogani.netlify.app/" target='_blank'>https://shopogani.netlify.app/</a></li>
             <li><a href="/" >Home</a></li>
         </ul>
     </div>
