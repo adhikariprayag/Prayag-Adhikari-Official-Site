@@ -57,7 +57,7 @@ function Portfolio() {
                   <div>
                     <p className='fw-lighter fs-6 p-0 m-0  '>PROJECT: 2/5</p>
                     <a href="https://bstrapdemo.netlify.app/" target='_blank'>Bstrapdemo <i className="ri-arrow-right-up-line"></i></a>
-                    <p className=''> A simple shopping site which showcases the use of pulling API.</p>
+                    <p className=''> A site made purely using Bootstrap.</p>
 
                     <div className='tools-con '>
                       <span className='tools'>Html</span>
