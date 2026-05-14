@@ -6,6 +6,10 @@
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
 
+        @media (max-width: 1000px) {
+            scroll-snap-type: none;
+        }
+
         .status {
             background-color: #1F1F1F;
             border: 1.5px solid #575757;
@@ -118,6 +122,12 @@
             height: 100vh;
             scroll-snap-align: start;
             scroll-snap-stop: always;
+
+            @media (max-width: 1000px) {
+                height: auto;
+                min-height: 100vh;
+                scroll-snap-align: none;
+            }
 
             .serv-con {
                 max-width: 900px;

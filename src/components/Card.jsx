@@ -14,7 +14,6 @@ function Card() {
             <h5 className='fs-5 fw-light py-2'>Based in Bloomfield, NJ</h5>
             <div className='socials'>
               <ul>
-                <li><a href="https://www.facebook.com/adhikariprayag" target='_blank'><i className="ri-facebook-line"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/adhikariprayag/" target='_blank'><i className="ri-linkedin-line"></i></a></li>
                 <li><a href="https://github.com/adhikariprayag" target='_blank'><i className="ri-github-line"></i></a></li>
               </ul>
