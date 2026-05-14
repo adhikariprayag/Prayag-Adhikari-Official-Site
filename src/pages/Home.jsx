@@ -23,8 +23,6 @@ function Home() {
                             <div className='py-3 '><p className='text-light fw-light fs-5 p-0 m-0 '>A Design enthusiast.</p></div>
                             <div>
                                 <ul className='d-flex list-unstyled  m-0 p-0 justify-content-evenly gap-4'>
-                                    <li><a href="https://www.facebook.com/adhikariprayag" target='_blank'><i className="ri-facebook-line"></i></a></li>
-                                    <li><a href="https://www.instagram.com/adhikariprayag/" target='_blank'><i className="ri-instagram-line"></i></a></li>
                                     <li><a href="https://www.linkedin.com/in/adhikariprayag/" target='_blank'><i className="ri-linkedin-line"></i></a></li>
                                     <li><a href="https://github.com/adhikariprayag" target='_blank'><i className="ri-github-line"></i></a></li>
                                 </ul>
@@ -59,7 +57,7 @@ function Home() {
                                     Hello! I am <span className="clr">Prayag </span>, a design enthusiast.
                                 </div>
                                 <div className="col-lg-12 fw-light fs-5 py-3 py-md-0">
-                                    I am currently a undergraduate student majoring in Comuter Science and Business Analytics.
+                                    I am currently a undergraduate student majoring in Computer Science and Business Analytics.
                                 </div>
                                 <div className='prj-btn'>
                                     <div className='col-lg-11 py-0 d-flex justify-content-end align-items-center gap-4'>
