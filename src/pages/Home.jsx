@@ -20,7 +20,7 @@ function Home() {
                                 <img src={Pfp} alt="" />
                             </div>
                             <div className='clr py-3'><h1 className='fw-bolder p-0 m-0 '>Prayag Adhikari</h1></div>
-                            <div className='py-3 '><p className='text-light fw-light fs-5 p-0 m-0 '>A Web Designer/Developer, Graphic Designer and UI/UX Designer, based in Kathmandu, Nepal.</p></div>
+                            <div className='py-3 '><p className='text-light fw-light fs-5 p-0 m-0 '>A Design enthusiast.</p></div>
                             <div>
                                 <ul className='d-flex list-unstyled  m-0 p-0 justify-content-evenly gap-4'>
                                     <li><a href="https://www.facebook.com/adhikariprayag" target='_blank'><i className="ri-facebook-line"></i></a></li>
@@ -37,7 +37,7 @@ function Home() {
                                 <a href="mailto:adhikariprayag0@gmail.com" className='text-decoration-none text-secondary'><p className='fw-normal  py-2  m-0 fs-6 '><i className="ri-mail-send-line fw-lighter "></i> adhikariprayag0@gmail.com</p></a>
                             </div>
                             <div className="col-lg-12 d-flex justify-content-end w-100 ">
-                                <div className="pj-btn py-1  text-end animate__animated animate__fadeInDown animate__slower animate__infinite"><i className="ri-arrow-down-line"></i></div>
+                                <div style={{ cursor: "pointer" }} onClick={(e) => { e.currentTarget.closest('.sub-container').scrollBy({ top: window.innerHeight, behavior: 'smooth' }) }} className="pj-btn py-1  text-end animate__animated animate__fadeInDown animate__slower animate__infinite"><i className="ri-arrow-down-line"></i></div>
                             </div>
 
                         </div>
@@ -56,10 +56,10 @@ function Home() {
                             </div>
                             <div className="row text-light py-4 py-md-5 g-md-5 g-2 ">
                                 <div className="col-lg-12 fs-1 fw-bold ">
-                                    Hello! I am <span className="clr">Prayag Adhikari</span>, Website Designer and Developer
+                                    Hello! I am <span className="clr">Prayag </span>, a design enthusiast.
                                 </div>
                                 <div className="col-lg-12 fw-light fs-5 py-3 py-md-0">
-                                    I am a High School Graduate, with a passion for website design and development.
+                                    I am currently a undergraduate student majoring in Comuter Science and Business Analytics.
                                 </div>
                                 <div className='prj-btn'>
                                     <div className='col-lg-11 py-0 d-flex justify-content-end align-items-center gap-4'>
