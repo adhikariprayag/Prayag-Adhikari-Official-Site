@@ -7,6 +7,7 @@ import Services from './pages/Services'
 import Html from './pages/Html'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
+import Resume from './pages/Resume'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>}/>
         <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/resume' element={<Resume/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/html/projects' element={<Html/>}/>
         <Route path='*' element={<Nopage/>}/>

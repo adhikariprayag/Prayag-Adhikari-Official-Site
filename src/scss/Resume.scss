@@ -1,0 +1,355 @@
+.resume-page {
+    background-color: #1F1F1F;
+    min-height: 100vh;
+    padding: 50px 40px 100px;
+
+    @media (max-width: 1000px) {
+        padding: 40px 20px 120px;
+    }
+
+    .container {
+        max-width: 1320px;
+        margin: auto;
+        padding-right: 70px;
+
+        @media (max-width: 1000px) {
+            padding-right: 0;
+        }
+
+        .status {
+            background-color: #1F1F1F;
+            border: 1.5px solid #575757;
+            width: fit-content;
+            padding: 10px 30px;
+            border-radius: 25px;
+            height: fit-content;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .clr {
+            color: #28E98C !important;
+        }
+
+        .page-title {
+            color: #28E98C;
+            font-size: 42px;
+            font-weight: 700;
+
+            @media (max-width: 576px) {
+                font-size: 32px;
+            }
+        }
+
+        .page-subtitle {
+            color: #d1d1d1;
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 800px;
+        }
+
+        /* LEFT COLUMN: PDF VIEWER */
+        .pdf-card {
+            background-color: #1F1F1F;
+            border: 1.5px solid #575757;
+            border-radius: 25px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: border-color 0.3s;
+
+            &:hover {
+                border-color: #28E98C;
+            }
+
+            .pdf-header {
+                background-color: #242424;
+                border-bottom: 1.5px solid #575757;
+                padding: 14px 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .file-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    i {
+                        color: #28E98C;
+                        font-size: 18px;
+                    }
+
+                    .badge-pill {
+                        background-color: rgba(40, 233, 140, 0.15);
+                        color: #28E98C;
+                        border: 1px solid rgba(40, 233, 140, 0.4);
+                        padding: 3px 10px;
+                        border-radius: 12px;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+
+                .pdf-actions {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .btn-action {
+                        color: #fff;
+                        text-decoration: none;
+                        background: transparent;
+                        border: 1px solid #575757;
+                        border-radius: 20px;
+                        padding: 6px 16px;
+                        font-size: 13px;
+                        font-weight: 500;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 6px;
+                        transition: all 0.3s ease;
+
+                        i {
+                            color: #28E98C;
+                            font-size: 15px;
+                        }
+
+                        &:hover {
+                            border-color: #28E98C;
+                            background-color: rgba(40, 233, 140, 0.1);
+                            color: #28E98C;
+                        }
+                    }
+                }
+            }
+
+            .pdf-frame-wrapper {
+                width: 100%;
+                height: 920px;
+                background-color: #2c2c2c;
+                position: relative;
+
+                @media (max-width: 992px) {
+                    height: 750px;
+                }
+
+                @media (max-width: 576px) {
+                    height: 520px;
+                }
+
+                .pdf-viewer {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    display: block;
+                }
+            }
+
+            .pdf-mobile-fallback {
+                display: none;
+                padding: 16px 20px;
+                background-color: #242424;
+                border-top: 1.5px solid #575757;
+                color: #a0a0a0;
+                font-size: 13px;
+                text-align: center;
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+
+                a {
+                    color: #28E98C;
+                    text-decoration: none;
+                    font-weight: 600;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        /* RIGHT COLUMN: QR CODE & DOWNLOAD BUTTON */
+        .resume-sidebar {
+            position: sticky;
+            top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            @media (max-width: 992px) {
+                position: static;
+                margin-top: 10px;
+            }
+
+            /* QR CODE CARD */
+            .qr-card {
+                background-color: #1F1F1F;
+                border: 1.5px solid #575757;
+                border-radius: 25px;
+                padding: 24px;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-color: #28E98C;
+                    transform: translateY(-3px);
+                }
+
+                .qr-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    color: #28E98C;
+                    font-weight: 600;
+                    font-size: 15px;
+                    margin-bottom: 16px;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+
+                .qr-image-container {
+                    display: block;
+                    width: 100%;
+                    max-width: 250px;
+                    margin: 0 auto;
+                    background-color: #ffffff;
+                    padding: 12px;
+                    border-radius: 20px;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        border-radius: 10px;
+                    }
+                }
+
+                .qr-caption {
+                    margin-top: 14px;
+                    margin-bottom: 0;
+                    color: #a0a0a0;
+                    font-size: 13px;
+                    font-weight: 400;
+
+                    a {
+                        color: #28E98C;
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: color 0.2s;
+
+                        &:hover {
+                            color: #fff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            /* DOWNLOAD BUTTON (JUST ABOVE IT IS THE QR CODE) */
+            .download-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding: 14px 28px;
+                background-color: #28E98C;
+                border: 2px solid #28E98C;
+                border-radius: 25px;
+                color: #1F1F1F;
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                transition: all 0.3s ease;
+                box-shadow: 0 6px 20px rgba(40, 233, 140, 0.25);
+
+                i {
+                    font-size: 20px;
+                    transition: transform 0.2s;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #28E98C;
+                    box-shadow: 0 8px 25px rgba(40, 233, 140, 0.4);
+
+                    i {
+                        transform: translateY(2px);
+                    }
+                }
+            }
+
+            /* QUICK INFO TILE */
+            .quick-info-card {
+                background-color: #1F1F1F;
+                border: 1.5px solid #575757;
+                border-radius: 25px;
+                padding: 22px;
+                color: #fff;
+
+                .info-title {
+                    color: #28E98C;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    i {
+                        font-size: 18px;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    li {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 10px;
+                        font-size: 13px;
+                        line-height: 1.5;
+                        color: #d1d1d1;
+
+                        i {
+                            color: #28E98C;
+                            font-size: 15px;
+                            margin-top: 2px;
+                            flex-shrink: 0;
+                        }
+
+                        strong {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

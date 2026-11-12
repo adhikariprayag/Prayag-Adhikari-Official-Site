@@ -11,6 +11,7 @@ function Navbar() {
         <li><NavLink to="/about" title='About'><i className="ri-user-line"></i></NavLink></li>
         <li><NavLink to="/services" title='Experiences'><i className="ri-briefcase-line"></i></NavLink></li>
         <li><NavLink to="/portfolio" title='Portfolio'><i className="ri-tv-2-line"></i></NavLink></li>
+        <li><NavLink to="/resume" title='Resume'><i className="ri-file-text-line"></i></NavLink></li>
         <li><NavLink to="/contact" title='Contact'><i className="ri-chat-3-line"></i></NavLink></li>
        </ul>
     </nav>
