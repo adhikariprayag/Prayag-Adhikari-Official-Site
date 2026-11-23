@@ -21,6 +21,15 @@
 
         .owl-carousel {
             padding: 30px 0px;
+
+            .owl-stage-outer {
+                overflow: hidden;
+            }
+
+            .owl-item {
+                padding: 12px 0;
+            }
+
             img {
                 width: 50% !important;
                 border-radius: 50px !important;
@@ -64,11 +73,79 @@
 
         .img-box {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
+            flex-wrap: nowrap;
             align-items: center;
-            gap: 20px;
+            gap: 30px;
 
-            a {
+            @media (max-width: 950px) {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .project-img-link {
+                width: 50% !important;
+                flex: 0 0 50%;
+                max-width: 50%;
+                display: block;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 0;
+                line-height: 0;
+                padding: 6px;
+
+                @media (max-width: 950px) {
+                    width: 85% !important;
+                    flex: 0 0 85%;
+                    max-width: 85%;
+                }
+
+                img {
+                    width: 100% !important;
+                    max-width: 100%;
+                    max-height: 360px;
+                    object-fit: cover;
+                    object-position: top center;
+                    display: block;
+                    border-radius: 40px !important;
+                    border: 2px dotted #575757;
+                    padding: 16px;
+                    opacity: 0.85;
+                    transition: border-color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                &:hover img {
+                    opacity: 1 !important;
+                    border-color: #28E98C !important;
+                    box-shadow: 0 0 18px rgba(40, 233, 140, 0.25);
+                }
+            }
+
+            &:hover .project-img-link img {
+                border-color: #28E98C !important;
+                opacity: 1 !important;
+                box-shadow: 0 0 18px rgba(40, 233, 140, 0.25);
+            }
+
+            img {
+                width: 50% !important;
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                @media (max-width: 950px) {
+                    width: 85% !important;
+                    flex: 0 0 85%;
+                    max-width: 85%;
+                }
+            }
+
+            > div {
+                flex: 1;
+                min-width: 0;
+            }
+
+            a:not(.project-img-link) {
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 34px;
@@ -78,10 +155,10 @@
                 @media (min-width:0px) and (max-width:300px) {
                     font-size: 18px;
                 }
-            }
 
-            a:hover {
-                color: #575757;
+                &:hover {
+                    color: #575757;
+                }
             }
 
 

@@ -23,8 +23,7 @@ function Resume() {
             </div>
             <div className="col-12">
               <p className="page-subtitle mb-0">
-                Honors Computer Science student at Caldwell University with applied NLP research & ATS evaluation experience.
-                Seeking software engineering, data, and AI internships.
+                Computer Science Honors student at Caldwell University who builds games and AI tools, from a 3D AI-powered language game at HackPrinceton to a Mario-style platformer and an AI research pipeline.
               </p>
             </div>
           </div>
@@ -152,13 +151,13 @@ function Resume() {
                     <li>
                       <i className="ri-code-s-slash-line"></i>
                       <span>
-                        <strong>Technical Stack</strong> — Python, SQL, JavaScript, React, Next.js, spaCy, AI Dev Tools
+                        <strong>Technical Stack</strong> — Python, Java, C, React, Three.js, TypeScript, Pygame, spaCy, SQL
                       </span>
                     </li>
                     <li>
                       <i className="ri-map-pin-line"></i>
                       <span>
-                        <strong>Location & Status</strong> — Bloomfield, NJ • Seeking Software / Data / AI Internships
+                        <strong>Location & Status</strong> — Bloomfield, NJ • Seeking Software / Game AI / ML Internships
                       </span>
                     </li>
                   </ul>

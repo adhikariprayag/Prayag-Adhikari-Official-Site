@@ -82,11 +82,13 @@ function Portfolio() {
                 <div className="tab-pane fade show active" id="webdev-tab-pane" role="tabpanel" aria-labelledby="webdev-tab" tabIndex="0">
               <div className="owl-carousel">
                 <div className='img-box d-flex  justify-content-center  '>
-                  <img className='w-50 ' src={howtohello} alt="HowToHello - HackPrinceton 2026" />
+                  <a href="https://devpost.com/software/howtohello" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open HowToHello">
+                    <img src={howtohello} alt="HowToHello - HackPrinceton 2026" />
+                  </a>
                   <div>
                     <p className='fw-lighter fs-6 p-0 m-0  '>PROJECT: 1/7</p>
                     <a href="https://devpost.com/software/howtohello" target='_blank' rel="noopener noreferrer">HowToHello <i className="ri-arrow-right-up-line"></i></a>
-                    <p className=''> An immersive 3D neighborhood language-learning web app built for HackPrinceton 2026. Explore, run errands, and converse with interactive AI neighbors.</p>
+                    <p className=''> A 3D language learning game built for HackPrinceton 2026. Explore a neighborhood and converse with AI neighbors.</p>
 
                     <div className='tools-con '>
                       <span className='tools'>Three.js</span>
@@ -100,7 +102,9 @@ function Portfolio() {
                 </div>
 
                 <div className='img-box d-flex  justify-content-center  '>
-                  <img className='w-50 ' src={aifun} alt="AI Portfolio Site" />
+                  <a href="https://paport777.vercel.app/" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open AI Portfolio Site">
+                    <img src={aifun} alt="AI Portfolio Site" />
+                  </a>
                   <div>
                     <p className='fw-lighter fs-6 p-0 m-0  '>PROJECT: 2/7</p>
                     <a href="https://paport777.vercel.app/" target='_blank'>AI Portfolio Site <i className="ri-arrow-right-up-line"></i></a>
@@ -117,7 +121,9 @@ function Portfolio() {
                 </div>
 
                 <div className='img-box d-flex  justify-content-center  '>
-                  <img className='w-50 ' src={Nepsop} alt="" />
+                  <a href="https://nepsopdemo.netlify.app/" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open Nepsop">
+                    <img src={Nepsop} alt="Nepsop" />
+                  </a>
                   <div>
                     <p className='fw-lighter fs-6 p-0 m-0  '>PROJECT: 3/7</p>
                     <a href="https://nepsopdemo.netlify.app/" target='_blank'>Nepsop <i className="ri-arrow-right-up-line"></i></a>
@@ -134,7 +140,9 @@ function Portfolio() {
                 </div>
 
                 <div className='img-box d-flex  justify-content-center  '>
-                  <img className='w-50 ' src={Bstrapdemo} alt="" />
+                  <a href="https://bstrapdemo.netlify.app/" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open Bstrapdemo">
+                    <img src={Bstrapdemo} alt="Bstrapdemo" />
+                  </a>
                   <div>
                     <p className='fw-lighter fs-6 p-0 m-0  '>PROJECT: 4/7</p>
                     <a href="https://bstrapdemo.netlify.app/" target='_blank'>Bstrapdemo <i className="ri-arrow-right-up-line"></i></a>
@@ -149,7 +157,9 @@ function Portfolio() {
                 </div>
 
                 <div className='img-box d-flex  justify-content-center '>
-                  <img className='w-50 ' src={ecotrand} alt="" />
+                  <a href="https://ecotrand.vercel.app/" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open Ecotrand">
+                    <img src={ecotrand} alt="Ecotrand" />
+                  </a>
                   <div>
                   <p className='fw-lighter fs-6 p-0 m-0 '>PROJECT: 5/7</p>
                     <a href="https://ecotrand.vercel.app/" target='_blank'>Ecotrand <i className="ri-arrow-right-up-line"></i></a>
@@ -166,7 +176,9 @@ function Portfolio() {
                 </div>
 
                 <div className='img-box d-flex  justify-content-center '>
-                  <img className='w-50 ' src={deaxautt} alt="" />
+                  <a href="https://deaxaut.netlify.app/" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open Deaxautt">
+                    <img src={deaxautt} alt="Deaxautt" />
+                  </a>
                   <div>
                   <p className='fw-lighter fs-6 p-0 m-0 '>PROJECT: 6/7</p>
                     <a href="https://deaxaut.netlify.app/" target='_blank'>Deaxautt <i className="ri-arrow-right-up-line"></i></a>
@@ -183,7 +195,9 @@ function Portfolio() {
                 </div>
 
                 <div className='img-box d-flex  justify-content-center '>
-                  <img className='w-50 ' src={grofarweb} alt="" />
+                  <a href="https://grofarweb.netlify.app/" target='_blank' rel="noopener noreferrer" className="project-img-link" title="Open Grofarweb">
+                    <img src={grofarweb} alt="Grofarweb" />
+                  </a>
                   <div>
                   <p className='fw-lighter fs-6 p-0 m-0 '>PROJECT: 7/7</p>
                     <a href="https://grofarweb.netlify.app/" target='_blank'>Grofarweb <i className="ri-arrow-right-up-line"></i></a>
