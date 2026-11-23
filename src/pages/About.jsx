@@ -71,24 +71,24 @@ function About() {
                       <div className="tab-pane fade show active py-4 px-2 px-md-4" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex="0">
                         <div className="row text-light g-4 mt-2">
                           <div className="col-md-6">
-                            <h6 className="clr fw-bold mb-1">Web & Design Tools</h6>
-                            <p className="fw-light small mb-4">Figma, Canva, Adobe Photoshop, Illustrator, InDesign, Adobe XD</p>
+                            <h6 className="clr fw-bold mb-1">Programming & Tools</h6>
+                            <p className="fw-light small mb-4">Python, Java, C, JavaScript, React, HTML/CSS, SQL, LaTeX, Git, Excel, Canva</p>
 
-                            <h6 className="clr fw-bold mb-1">UX/UI Design</h6>
-                            <p className="fw-light small mb-4">Wireframing, Prototyping, Visual Hierarchy, Mobile Responsiveness, Accessibility</p>
+                            <h6 className="clr fw-bold mb-1">Game Development & 3D</h6>
+                            <p className="fw-light small mb-4">three.js, TypeScript, Pygame (Game Loop, Sprites, Collisions); interest in Unreal Engine & Game AI</p>
 
-                            <h6 className="clr fw-bold mb-1">Platforms & Tools</h6>
-                            <p className="fw-light small mb-4">WordPress, Netlify, Render, Vercel, GitHub, Google Workspace</p>
+                            <h6 className="clr fw-bold mb-1">UI/UX Design & Creative</h6>
+                            <p className="fw-light small mb-0">Figma, Canva, Adobe Photoshop, Illustrator, Wireframing, Prototyping, Accessibility</p>
                           </div>
                           <div className="col-md-6">
-                            <h6 className="clr fw-bold mb-1">Web Development</h6>
-                            <p className="fw-light small mb-4">HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, Bootstrap, SASS</p>
+                            <h6 className="clr fw-bold mb-1">AI & Data Science</h6>
+                            <p className="fw-light small mb-4">OpenAI API, spaCy NER, F1 Evaluation, Data Labeling, NumPy, pandas, Jupyter</p>
 
-                            <h6 className="clr fw-bold mb-1">Collaboration</h6>
-                            <p className="fw-light small mb-4">Communication, Creativity, Time Management, Marketing Support, Team Coordination</p>
+                            <h6 className="clr fw-bold mb-1">Web Development & Platforms</h6>
+                            <p className="fw-light small mb-4">Next.js, Tailwind CSS, Bootstrap, SASS, Vite, WordPress, Netlify, Vercel</p>
 
                             <h6 className="clr fw-bold mb-1">Languages</h6>
-                            <p className="fw-light small mb-0">English (Fluent), Hindi (Fluent), Nepali (Native)</p>
+                            <p className="fw-light small mb-0">English, Nepali, Hindi (Native or Bilingual); Spanish (Limited working)</p>
                           </div>
                         </div>
                       </div>
@@ -105,7 +105,8 @@ function About() {
                             <div id="flush-collapseZero" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                               <div className="accordion-body d-flex flex-column ">
                                 <code>Caldwell University, Caldwell, New Jersey</code>
-                                <p className="mt-2 mb-0">- Bachelor's in Computer Science & Business Analytics, Honors Student</p>
+                                <p className="mt-2 mb-1">- Bachelor's in Computer Science (Honors), Expected 2028</p>
+                                <p className="mb-0 text-secondary" style={{ fontSize: '13px' }}>Relevant Coursework: Design & Analysis of Algorithms, Data Structures, Probability & Statistics, Programming Languages, Data Visualization</p>
                               </div>
                             </div>
                           </div>
@@ -190,6 +191,20 @@ function About() {
                                     Verify Certificate <i className="ri-external-link-line"></i>
                                   </button>
                                 </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="accordion-item animate__animated animate__slideInDown">
+                            <h2 className="accordion-header">
+                              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-certs2" aria-expanded="false" aria-controls="flush-certs2">
+                                Additional Certificates
+                              </button>
+                            </h2>
+                            <div id="flush-certs2" className="accordion-collapse collapse" data-bs-parent="#accordionAwards">
+                              <div className="accordion-body d-flex flex-column gap-3">
+                                <div><code className='clr fs-6'>Web Design Certificate</code> — Broadway Infosys <span className="text-secondary">(Status: Completed)</span></div>
+                                <div><code className='clr fs-6'>The Ultimate Job Ready Data Science Course</code> — CodeWithHarry <span className="text-secondary">(Status: In progress)</span></div>
                               </div>
                             </div>
                           </div>
